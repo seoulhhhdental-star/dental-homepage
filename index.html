@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>사랑니 발치 후 주의사항 | 서울훈훈한치과</title>
+  <title>서울훈훈한치과</title>
   <link rel="stylesheet" href="shared.css" />
 </head>
 <body>
@@ -15,58 +15,137 @@
         <ul class="menu">
           <li><a href="index.html">메인 페이지</a></li>
           <li><a href="subjects.html">진료과목</a></li>
-          <li><a href="columns.html" aria-current="page">원장칼럼</a></li>
+          <li><a href="columns.html">원장칼럼</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="page-head">
-      <div class="wrap">
-        <p class="eyebrow">COLUMN</p>
-        <h1>사랑니 발치 후 주의사항</h1>
-        <p class="lead">발치 당일과 며칠간 지켜 주시면 좋은 것들을 정리했습니다.</p>
+    <!-- 첫 화면 슬라이드 -->
+    <section class="hero">
+      <div class="slides" id="slides">
+        <div class="slide is-active">
+          <p class="eyebrow">수면치과치료</p>
+          <h1>치과치료, 더이상 아프지 않습니다</h1>
+          <p class="lead">잠든 사이에 편안하게 치료받으실 수 있도록 안내드립니다.</p>
+        </div>
+        <div class="slide">
+          <p class="eyebrow">서울대 출신 원장</p>
+          <h1>서울대학교 치과병원과 동일한 술식과 재료를 사용합니다</h1>
+          <p class="lead">조훈익 대표원장을 중심으로 진료합니다.</p>
+        </div>
+        <div class="slide">
+          <p class="eyebrow">일요일 진료</p>
+          <h1>일요일에도 진료합니다</h1>
+          <p class="lead">평일에 시간이 어려우신 분도 편하게 방문하실 수 있습니다.</p>
+        </div>
       </div>
-    </div>
-    <section>
+      <div class="slide-controls">
+        <button type="button" class="slide-btn" data-dir="-1" aria-label="이전 슬라이드">&#8249;</button>
+        <div class="slide-dots" role="tablist" aria-label="슬라이드 선택">
+          <button type="button" class="dot is-active" aria-label="1번 슬라이드"></button>
+          <button type="button" class="dot" aria-label="2번 슬라이드"></button>
+          <button type="button" class="dot" aria-label="3번 슬라이드"></button>
+        </div>
+        <button type="button" class="slide-btn" data-dir="1" aria-label="다음 슬라이드">&#8250;</button>
+      </div>
+    </section>
+
+    <!-- 병원 소개 -->
+    <section id="about">
       <div class="wrap">
-        <div class="block column-split">
-          <div class="column-video">
-            <iframe
-              src="https://www.youtube.com/embed/xfqyJEwQhC8"
-              title="사랑니 발치 후 주의사항 쇼츠"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+        <p class="eyebrow">ABOUT</p>
+        <h2>병원 소개</h2>
+        <p>통증을 먼저 생각하는 치과입니다. 치료 전에 과정을 충분히 설명드리고, 불편함을 줄이는 방법을 함께 찾습니다.</p>
+        <img class="about-photo" src="images/hospital.jpg" alt="서울훈훈한치과 병원 사진" />
+      </div>
+    </section>
+
+    <!-- 원장 소개 -->
+    <section id="doctors">
+      <div class="wrap">
+        <p class="eyebrow">DOCTORS</p>
+        <h2>원장 소개</h2>
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <div class="avatar-lg" role="img" aria-label="조훈익 원장 사진 자리"></div>
+            <h3>조훈익 원장</h3>
+            <p class="role">원장</p>
+            <p class="bio">서울대학교 치과대학 출신 · 前 서울리온치과의원 원장 · 前 서울대학교 치과대학 총대표</p>
+          </article>
+          <article class="doctor-card">
+            <div class="avatar-lg" role="img" aria-label="이수근 수석원장 사진 자리"></div>
+            <h3>이수근 원장</h3>
+            <p class="role">수석원장</p>
+            <p class="bio">강릉원주대학교 치과대학 출신 · 대한구강악안면임플란트학회 · 대한심미치과학회 회원 · 前 서울남부구치소 치과 근무</p>
+          </article>
+          <article class="doctor-card">
+            <div class="avatar-lg" role="img" aria-label="곽원우 원장 사진 자리"></div>
+            <h3>곽원우 원장</h3>
+            <p class="role">원장</p>
+            <p class="bio">서울대학교 치과대학 졸업 · 보건복지부 인증 통합치의학과 전문의 · 前 서울 수려한치과·더퍼스트치과·리오치과 원장</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 진료 안내 -->
+    <section id="treatment">
+      <div class="wrap">
+        <p class="eyebrow">TREATMENT</p>
+        <h2>진료 안내</h2>
+        <div class="treat-list">
+          <article class="treat">
+            <div class="num">1</div>
+            <div>
+              <!-- 여기고치기: 진료 안내(수면치과치료) -->
+              <h3>수면치과치료</h3>
+              <p>치과가 무서운 분도 잠든 상태에서 편안하게 치료받으실 수 있도록 안내드립니다.</p>
+            </div>
+          </article>
+          <article class="treat">
+            <div class="num">2</div>
+            <div>
+              <h3>무통 치료</h3>
+              <p>통증을 줄이는 방법을 먼저 설명드리고, 아프지 않은 치과치료를 목표로 진행합니다.</p>
+            </div>
+          </article>
+          <article class="treat">
+            <div class="num">3</div>
+            <div>
+              <h3>일요일 진료</h3>
+              <p>평일에 시간이 어려우신 분도 일요일에 편하게 방문하실 수 있습니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 오시는 길 -->
+    <section id="visit" class="visit">
+      <div class="wrap">
+        <p class="eyebrow">VISIT</p>
+        <h2>오시는 길</h2>
+        <div class="visit-inner">
+          <div>
+            <dl class="info">
+              <dt>주소</dt>
+              <dd>서울특별시 광진구 아차산로 361 (자양동)</dd>
+              <dt>전화</dt>
+              <!-- 여기고치기: 전화 -->
+              <dd><a class="tel" data-phone>02-452-2080</a></dd>
+              <dt>진료시간</dt>
+            </dl>
+            <!-- 여기고치기: 진료시간 -->
+            <table class="hours-table" aria-label="진료시간">
+              <tr><td>월 · 목</td><td>09:30 ~ 20:30</td></tr>
+              <tr><td>화 · 수 · 금</td><td>09:30 ~ 18:30</td></tr>
+              <tr><td>토 · 일</td><td>09:30 ~ 13:30</td></tr>
+              <tr><td>점심시간</td><td>12:30 ~ 14:00</td></tr>
+            </table>
           </div>
-
-          <div class="column-body">
-          <p>사랑니를 뽑고 나면 잇몸에 피가 고이거나 붓기가 생기는 것은 대부분 자연스러운 과정입니다. 다만 몇 가지만 지켜 주시면 회복이 훨씬 편해집니다.</p>
-
-          <h3>발치 당일</h3>
-          <ul class="plain">
-            <li>거즈를 문 상태로 30분에서 1시간 정도 가만히 있어 주세요.</li>
-            <li>뜨거운 음식, 술, 격한 운동은 피해 주세요.</li>
-            <li>혀나 손가락으로 발치한 자리를 자꾸 만지지 마세요.</li>
-          </ul>
-
-          <h3>발치 후 며칠</h3>
-          <ul class="plain">
-            <li>부드러운 음식을 드시고, 발치하지 않은 쪽으로 씹어 주세요.</li>
-            <li>양치는 발치한 자리만 살살 피해서 하세요.</li>
-            <li>빨대 사용, 담배, 강하게 헹구는 행동은 피립니다. 피가 멎는 것을 방해할 수 있어요.</li>
-          </ul>
-
-          <h3>이런 경우에는 바로 연락 주세요</h3>
-          <ul class="plain">
-            <li>출혈이 한참 지나도 멎지 않을 때</li>
-            <li>통증이 점점 심해지거나, 열이 날 때</li>
-            <li>발치한 자리에서 심한 악취나 고름이 나올 때</li>
-          </ul>
-
-          <p class="meta">본 글은 일반적인 주의사항이며, 개인의 상태에 따라 달라질 수 있습니다. 궁금한 점은 진료 때 원장님께 직접 여쭤 주세요.</p>
-          </div>
+          <div class="map-ph" role="img" aria-label="지도 자리">지도 자리 (주소가 정해지면 넣습니다)</div>
         </div>
       </div>
     </section>
@@ -86,5 +165,32 @@
 
   <!-- 화면의 전화번호만 고치면 누를 때 거는 번호도 같이 바뀝니다 -->
   <script>document.querySelectorAll("a[data-phone]").forEach(a => a.href = "tel:" + a.textContent.replace(/[^0-9]/g, ""));</script>
+
+  <script>
+    (function () {
+      var slides = document.querySelectorAll("#slides .slide");
+      var dots = document.querySelectorAll(".slide-dots .dot");
+      var btns = document.querySelectorAll(".slide-btn");
+      var current = 0;
+      var timer = null;
+
+      function show(i) {
+        current = (i + slides.length) % slides.length;
+        slides.forEach(function (s, n) { s.classList.toggle("is-active", n === current); });
+        dots.forEach(function (d, n) { d.classList.toggle("is-active", n === current); });
+      }
+      function restart() {
+        clearInterval(timer);
+        timer = setInterval(function () { show(current + 1); }, 6000);
+      }
+      btns.forEach(function (b) {
+        b.addEventListener("click", function () { show(current + Number(b.dataset.dir)); restart(); });
+      });
+      dots.forEach(function (d, n) {
+        d.addEventListener("click", function () { show(n); restart(); });
+      });
+      restart();
+    })();
+  </script>
 </body>
 </html>
