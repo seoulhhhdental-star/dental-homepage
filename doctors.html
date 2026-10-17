@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>원장 소개 | 서울훈훈한치과</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="logo" href="index.html">서울훈훈한치과</a>
+      <nav aria-label="주요 메뉴">
+        <ul class="menu">
+          <li><a href="index.html">메인 페이지</a></li>
+          <li><a href="subjects.html">진료과목</a></li>
+          <li><a href="columns.html">원장칼럼</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">DOCTORS</p>
+        <h1>원장 소개</h1>
+      </div>
+    </div>
+    <section>
+      <div class="wrap">
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <div class="avatar-lg" role="img" aria-label="조훈익 원장 사진 자리"></div>
+            <h3>조훈익 원장</h3>
+            <p class="role">원장</p>
+            <p class="bio">서울대학교 치과대학 출신 · 前 서울리온치과의원 원장 · 前 서울대학교 치과대학 총대표</p>
+          </article>
+          <article class="doctor-card">
+            <div class="avatar-lg" role="img" aria-label="이수근 수석원장 사진 자리"></div>
+            <h3>이수근 원장</h3>
+            <p class="role">수석원장</p>
+            <p class="bio">강릉원주대학교 치과대학 출신 · 대한구강악안면임플란트학회 · 대한심미치과학회 회원 · 前 서울남부구치소 치과 근무</p>
+          </article>
+          <article class="doctor-card">
+            <div class="avatar-lg" role="img" aria-label="곽원우 원장 사진 자리"></div>
+            <h3>곽원우 원장</h3>
+            <p class="role">원장</p>
+            <p class="bio">서울대학교 치과대학 졸업 · 보건복지부 인증 통합치의학과 전문의 · 前 서울 수려한치과·더퍼스트치과·리오치과 원장</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>서울훈훈한치과</strong><br />
+        서울특별시 광진구 아차산로 361 (자양동)<br />
+        <!-- 여기고치기: 전화 -->
+        <span>전화 <a class="tel" data-phone style="color:inherit">02-452-2080</a></span>
+      </div>
+      <div>© 서울훈훈한치과. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- 화면의 전화번호만 고치면 누를 때 거는 번호도 같이 바뀝니다 -->
+  <script>document.querySelectorAll("a[data-phone]").forEach(a => a.href = "tel:" + a.textContent.replace(/[^0-9]/g, ""));</script>
+</body>
+</html>

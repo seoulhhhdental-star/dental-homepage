@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>오시는 길 | 서울훈훈한치과</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="logo" href="index.html">서울훈훈한치과</a>
+      <nav aria-label="주요 메뉴">
+        <ul class="menu">
+          <li><a href="index.html">메인 페이지</a></li>
+          <li><a href="subjects.html">진료과목</a></li>
+          <li><a href="columns.html">원장칼럼</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">VISIT</p>
+        <h1>오시는 길</h1>
+      </div>
+    </div>
+    <section class="visit">
+      <div class="wrap visit-inner">
+        <div>
+          <dl class="info">
+            <dt>주소</dt>
+            <dd>서울특별시 광진구 아차산로 361 (자양동)</dd>
+            <dt>전화</dt>
+            <!-- 여기고치기: 전화 -->
+            <dd><a class="tel" data-phone>02-452-2080</a></dd>
+          </dl>
+          <dl class="info">
+            <dt>진료시간</dt>
+          </dl>
+          <!-- 여기고치기: 진료시간 -->
+          <table class="hours-table" aria-label="진료시간">
+            <tr><td>월 · 목</td><td>09:30 ~ 20:30</td></tr>
+            <tr><td>화 · 수 · 금</td><td>09:30 ~ 18:30</td></tr>
+            <tr><td>토 · 일</td><td>09:30 ~ 13:30</td></tr>
+            <tr><td>점심시간</td><td>12:30 ~ 14:00</td></tr>
+          </table>
+        </div>
+        <div class="map-ph" role="img" aria-label="지도 자리">지도 자리 (주소가 정해지면 넣습니다)</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>서울훈훈한치과</strong><br />
+        서울특별시 광진구 아차산로 361 (자양동)<br />
+        <!-- 여기고치기: 전화 -->
+        <span>전화 <a class="tel" data-phone style="color:inherit">02-452-2080</a></span>
+      </div>
+      <div>© 서울훈훈한치과. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- 화면의 전화번호만 고치면 누를 때 거는 번호도 같이 바뀝니다 -->
+  <script>document.querySelectorAll("a[data-phone]").forEach(a => a.href = "tel:" + a.textContent.replace(/[^0-9]/g, ""));</script>
+</body>
+</html>
